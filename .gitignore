@@ -1,0 +1,25 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Playwright test artifacts
+playwright-report/
+test-results/
+trace.zip
+
+# Environment and config files
+.env
+*.log
+*.local
+
+# VS Code workspace settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Ignore Playwright report
+playwright-report/
