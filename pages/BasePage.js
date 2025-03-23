@@ -3,7 +3,20 @@ class BasePage {
         this.page = page;
     }
 
-    // Generate a unique username with a timestamp
+    /**
+    * Navigates to the main page of the application.
+    */
+    async navigateToMainPage() {
+        await this.page.goto('https://pushing-it.vercel.app/');
+        await this.page.waitForLoadState('domcontentloaded');
+    }    
+
+
+    /**
+    * Generates a unique username using a timestamp.
+    * @param {string} [baseName='testuser'] - Optional base name to combine with timestamp.
+    * @returns {string} - The generated unique username.
+    */
     generateUniqueUsername(prefix = 'user') {
         const timestamp = Date.now(); 
         return `${prefix}${timestamp}`;
