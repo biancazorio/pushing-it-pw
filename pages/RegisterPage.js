@@ -15,7 +15,6 @@ class RegisterPage extends BasePage{
         this.monthDropdown = '#month';
         this.yearDropdown = '#year';
         this.registerButton = '#submitForm';
-        this.dayOption = "//option[@value='${day}']";
     }
 
     /**
