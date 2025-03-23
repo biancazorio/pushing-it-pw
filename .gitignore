@@ -20,3 +20,6 @@ trace.zip
 
 # Windows system files
 Thumbs.db
+
+# Ignore Playwright report
+playwright-report/
